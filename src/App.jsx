@@ -8,6 +8,11 @@ function App() {
 
   return (
     <>
+      <div>
+        <button className='m-5 w-15 h-8 text-lg text-amber-50 cursor-pointer bg-red-500 hover:bg-red-700'>          
+          Click here
+        </button>
+      </div>
       
     </>
   )
