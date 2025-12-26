@@ -1,21 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import  Home from './pages/Home';
+import PageNotFound from './pages/PageNotFound';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <button className='m-5 w-15 h-8 text-lg text-amber-50 cursor-pointer bg-red-500 hover:bg-red-700'>          
-          Click here
-        </button>
-      </div>
-      
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path="*" element={<PageNotFound/>}/>
+      </Routes>
+     </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App

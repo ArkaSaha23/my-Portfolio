@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@theme {
+
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  /* --color-primary-foreground: hsl(var(--primary-foreground)); */
+  --color-secondary: hsl(var(--secondary));
+  --color-card: hsl(var(--card))
+
+  --animate-float : float 6s ease-in-out infinite;  /* Float Animation for hero sections*/
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;/* stars in the background*/
+  --animate-fade-in: fade-in 0.7s ease-out forward; 
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forward; 
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forward; 
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forward; 
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forward;
+  --animate-meteor: meteor 1s linear infinite;
+
+  @keyframes float {
+  0%,           /*At 0 seconds, the element is at its original position */
+  100% { transform: translateY(0); } /*At 6 seconds, the element has returned to its original position*/
+  50% { transform: translateY(-10px); } /*At 3 seconds, the element has moved 10 pixels up*/
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;   /*  Start invisible */
+      transform: translateY(10px); /* start 10px below than normal */
+    } 
+    to { 
+      opacity: 1;        /* fully visible*/
+      transform: translateY(0); /* move to its actual position*/
+    }
+  }
+
+  @keyframes pulse-subtle {
+    0%, /*At 0 seconds, the element is fully opaque */
+    100% { opacity: 1; } /*At 4 seconds, the element is fully opaque */
+    50% { opacity: 0.7; } /*at 2 seconds the elemets is 70% transparent*/
+  }
+
+  @keyframes meteor {
+    0% { 
+      transform: rotate(215deg) translateX(0); 
+      opacity: 1; 
+    }
+    70% { 
+      opacity: 1; 
+    }
+    100% { 
+      transform: rotate(215deg) translateX(-500px); 
+      opacity: 0; 
+    }
+  }
+}
