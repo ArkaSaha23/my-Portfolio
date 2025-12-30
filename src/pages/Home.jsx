@@ -1,11 +1,11 @@
+import Theme from "../components/Theme";
+import '../index.css';
 function Home() {
   return (
     <>
-    <div>
-      <h1>Welcome to My Portfolio</h1>
-    </div>
-
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
      {/* Theme Toggle */}
+      <Theme/>
 
      {/* Background effects */}
 
@@ -22,6 +22,7 @@ function Home() {
       {/* Contact Section */} 
 
       {/* Footer Section */}
+      </div>
     </>
   );
 } 
