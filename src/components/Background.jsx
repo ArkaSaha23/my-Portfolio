@@ -16,7 +16,7 @@ function Background() {
  //star
   const generateStars = () => {
     const starNumbers = Math.floor(
-      (window.innerWidth * window.innerHeight) / 4000
+      (window.innerWidth * window.innerHeight) / 2500
     );
     const newStars = [];
     for (let i = 0; i < starNumbers; i++) {
@@ -24,7 +24,7 @@ function Background() {
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 2 + 1,
+        size: Math.random(),
         opacity: Math.random(),
         animationDuration: Math.random() * 5 + 2,
       });
@@ -39,10 +39,10 @@ function Background() {
     for (let i = 0; i < meteorNumbers; i++) {
       newMeteors.push({
         id: i,
-        x: Math.random() * 80,
-        y: Math.random() * 80,
+        x: Math.random() * 90,
+        y: Math.random() * 90,
         size: Math.random() * 2 + 1,
-        animationDuration: Math.random() * 2 + 8,
+        animationDuration: Math.random() * 2 + 10,
       });
     }
     setMeteors(newMeteors);
@@ -50,7 +50,7 @@ function Background() {
   
  //starfall
  const generateStarfall = () => {
-    const starfallNumbers = 100;
+    const starfallNumbers = 120;
     const newStarfall = [];
     for (let i = 0; i < starfallNumbers; i++) {
       newStarfall.push({
@@ -61,7 +61,7 @@ function Background() {
         opacity: Math.random(),
         moveX: (Math.random() - 0.5) * 1000, 
         moveY: (Math.random() - 0.5) * 1000,
-        animationDuration: Math.random() * 2 + 3,
+        animationDuration: Math.random() * 2 + 5,
       });
     }
     setStarFall(newStarfall)
@@ -113,7 +113,7 @@ function Background() {
           style={{
             left: `${eachMeteor.x}%`,
             top: `${eachMeteor.y}%`,
-            width: `${eachMeteor.size * 70}px`,
+            width: `${eachMeteor.size * 60}px`,
             height: `${eachMeteor.size}px`,
             animationDuration: `${eachMeteor.animationDuration}s`,
           }}
