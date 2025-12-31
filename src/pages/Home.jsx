@@ -1,3 +1,4 @@
+import Background from "../components/Background";
 import Theme from "../components/Theme";
 import '../index.css';
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
       <Theme/>
 
      {/* Background effects */}
+     <Background/>
 
      {/* navbar */}
 
