@@ -11,12 +11,21 @@ function Background() {
     generateStars();
     generateMeteors();
     generateStarfall();
+
+    const handleResize = () => {
+      generateStars();
+      generateMeteors();
+      generateStarfall();
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
  //star
   const generateStars = () => {
     const starNumbers = Math.floor(
-      (window.innerWidth * window.innerHeight) / 2500
+      (window.innerWidth * window.innerHeight) / 9000
     );
     const newStars = [];
     for (let i = 0; i < starNumbers; i++) {
@@ -50,7 +59,7 @@ function Background() {
   
  //starfall
  const generateStarfall = () => {
-    const starfallNumbers = 120;
+    const starfallNumbers = 80;
     const newStarfall = [];
     for (let i = 0; i < starfallNumbers; i++) {
       newStarfall.push({
@@ -114,7 +123,7 @@ function Background() {
             left: `${eachMeteor.x}%`,
             top: `${eachMeteor.y}%`,
             width: `${eachMeteor.size * 60}px`,
-            height: `${eachMeteor.size}px`,
+            height: `${eachMeteor.size*1.5}px`,
             animationDuration: `${eachMeteor.animationDuration}s`,
           }}
           />

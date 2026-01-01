@@ -7,15 +7,15 @@
   --color-foreground: rgb(var(--foreground));
   --color-primary: rgb(var(--primary));
   --color-secondary: rgb(var(--secondary));
-  --color-card: rgb(var(--card))
+  --color-card: rgb(var(--card));
 
   --animate-float : float 6s ease-in-out infinite;  /* Float Animation for hero sections*/
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;/* stars in the background*/
-  --animate-fade-in: fade-in 0.7s ease-out forward; 
-  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forward; 
-  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forward; 
-  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forward; 
-  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forward;
+  --animate-fade-in: fade-in 0.7s ease-out forwards; 
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards; 
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards; 
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards; 
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
   --animate-star-drift: star-drift 5s linear infinite;
 
@@ -76,7 +76,7 @@
 @layer base{
   :root {
     --border:226 232 240;   
-    --background: 255 255, 252;    
+    --background: 255 255 252;    
     --foreground:235 239 246;  
     --primary: 111 91 251;      
     --secondary:111 91 251;    
@@ -146,10 +146,10 @@
 }
 
 @utility star {
-  @apply absolute w-1 h-1 bg-white rounded-full shadow-[0_0_6px_2px_rgba(255,255,255,0.8)]; 
+  @apply absolute w-1 h-1 bg-white rounded-full shadow-[0_0_3px_2px_rgba(255,255,255,1.5)]; 
 }
 @utility starfall{
-  @apply absolute w-2 h-40 bg-linear-to-r from-white to-transparent rounded-full shadow-[0_0px_5px_2px_rgba(255,255,255,0.6)]
+  @apply absolute w-2 h-1 bg-linear-to-r from-white to-transparent rounded-full shadow-[0_0_2px_1px_rgba(255,255,255,1)]
 }
 @utility meteor {
   @apply absolute w-2 h-40 bg-linear-to-r from-white to-transparent rounded-full shadow-[0_0px_6px_rgba(255,255,255,1)];
