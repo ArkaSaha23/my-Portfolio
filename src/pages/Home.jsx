@@ -1,4 +1,5 @@
 import Background from "../components/Background";
+import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import Theme from "../components/Theme";
 import '../index.css';
@@ -16,6 +17,7 @@ function Home() {
      <Navbar/>
 
      {/* Home Section */}
+     <HeroSection/>
 
      {/* About Section */}
 

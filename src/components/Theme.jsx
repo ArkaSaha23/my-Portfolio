@@ -21,7 +21,7 @@ function Theme() {
   return( 
   <button 
     onClick={toggleTheme}
-    className="fixed z-60 max-sm:hidden top-3 right-5 z-50 p-2 ounded-full transition-colors duration-300 ">
+    className="fixed z-60 max-sm:hidden top-3 right-5 p-2 ounded-full transition-colors duration-300 ">
     {isDark ? 
     (<Sun className="h-10 w-10 text-yellow-300"/>) 
     : 
