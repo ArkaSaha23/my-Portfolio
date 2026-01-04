@@ -1,14 +1,13 @@
 import Background from "../components/Background";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
-import Theme from "../components/Theme";
 import '../index.css';
 function Home() {
   return (
     <>
     <div className="min-h-screen max-w-full bg-background text-foreground overflow-x-hidden">
      {/* Theme Toggle */}
-      <Theme/>
+      {/* <Theme/> */}
 
      {/* Background effects */}
      <Background/>

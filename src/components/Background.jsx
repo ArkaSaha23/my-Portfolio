@@ -8,6 +8,10 @@ function Background() {
   const [starfall, setStarFall] = useState([]);
 
   useEffect(() => {
+      document.documentElement.classList.add("dark");
+  }, []);
+
+  useEffect(() => {
     generateStars();
     generateMeteors();
     generateStarfall();

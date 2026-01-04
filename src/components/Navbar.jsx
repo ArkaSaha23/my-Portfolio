@@ -16,7 +16,7 @@ function Navbar() {
           </a>
           {/* desltop site*/}
           <div className="flex items-center">
-            <div className=" hidden md:flex space-x-8 text-foreground">
+            <div className=" hidden md:flex space-x-8 font-mono text-foreground">
               <a href="#home" className="navbar-btn">Home</a>
               <a href="#about" className="navbar-btn">About</a>
               <a href="#skills" className="navbar-btn">Skills</a>
