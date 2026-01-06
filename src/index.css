@@ -37,9 +37,10 @@
   }
 
   @keyframes pulse-subtle {
-    0%, /*At 0 seconds, the element is fully opaque */
-    100% { opacity: 1; } /*At 4 seconds, the element is fully opaque */
-    50% { opacity: 0.7; } /*at 2 seconds the elemets is 70% transparent*/
+    0%, 
+    25% { opacity: 1; } 
+    50% { opacity: 0.3; } 
+    100% { opacity: 1; } 
   }
 
   @keyframes meteor {
@@ -74,14 +75,14 @@
 }
 
 @layer base{
-  :root {
+  /* :root {
     --border:226 232 240;   
     --background: 255 255 252;    
     --foreground:235 239 246;  
     --primary: 111 91 251;      
     --secondary:111 91 251;    
     --card:50 62 78;           
-  }
+  } */
   .dark{
     --border:39 39 42;
     --background: 9 9 11;

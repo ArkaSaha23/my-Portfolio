@@ -1,25 +1,24 @@
 import Background from "../components/Background";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import About from "../components/About";
 import '../index.css';
 function Home() {
   return (
     <>
     <div className="min-h-screen max-w-full bg-background text-foreground overflow-x-hidden">
-     {/* Theme Toggle */}
-      {/* <Theme/> */}
-
      {/* Background effects */}
      <Background/>
 
      {/* navbar */}
      <Navbar/>
 
-     {/* Home Section */}
+     {/* Hero Section */}
      <HeroSection/>
 
      {/* About Section */}
-
+     <About/>
+     
       {/* Skills Section */}
 
       {/* Projects Section */}

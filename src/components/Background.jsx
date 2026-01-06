@@ -74,7 +74,9 @@ function Background() {
         opacity: Math.random(),
         moveX: (Math.random() - 0.5) * 1000, 
         moveY: (Math.random() - 0.5) * 1000,
-        animationDuration: Math.random() * 2 + 5,
+        animationDuration: Math.random() * 2 + 2
+        
+        ,
       });
     }
     setStarFall(newStarfall)
