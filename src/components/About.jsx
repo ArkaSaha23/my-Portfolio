@@ -31,17 +31,19 @@ function About() {
         <div/>
       </div>
       <div className="space-y-4 text-center font-mono text-sm md:text-base transition-all duration-300">
-        <div className="p-3 grid grid-rows-3 gap-3">
-          <div className="max-w-full h-25 md:h-40 bg-primary/15 border-1 rounded-md">
+        <div className="p-3 grid grid-rows-3 h-130 gap-10 md:gap-5">
+          {/* div 1 */}
+          <div className="max-w-full h-40 md:h-43 bg-primary/15 border-1 rounded-md">
             <div className="flex wrap text-center">
               <School className="mt-3 mx-3 h-6 w-6 text-primary"/>
               <h2 className="mt-3 text-blue-300">Education</h2>
             </div>
             <p className="px-3">
-              I'm a Computer Science Engineering student at Future Institute of Engineering and Management,currently honing my knowledge in different programming languages and DSA along with web development.
+              I'm a Computer Science Engineering student at Future Institute of Engineering and Management,currently honing my knowledge in different programming languages and DSA.
             </p>
           </div>
-          <div className="max-w-full h-20 md:h-35 bg-primary/15 border-1 rounded-md">
+           {/* div 2 */}
+          <div className="mt-3 max-w-full h-35 md:h-35 bg-primary/15 border-1 rounded-md">
             <div className="flex wrap text-center">
               <Code className="mt-3 mx-3 h-6 w-6 text-primary"/>
               <h2 className="mt-3 text-blue-300">Web Development</h2>
@@ -50,7 +52,8 @@ function About() {
               Creating Responsive web applications using HTML5, CSS3, Javascript, ReactJs, TailwindCSS and other modern frameworks.
             </h2>
           </div>
-          <div className="max-w-full h-20 md:h-33 bg-primary/15 border-1 rounded-md">
+           {/* div 3 */}
+          <div className="max-w-full h-30 md:h-33 bg-primary/15 border-1 rounded-md">
             <div className="flex wrap text-center">
               <User className="mt-3 mx-3 h-6 w-6 text-primary"/>
               <h2 className="mt-3 text-blue-300">UI/UX Design</h2>

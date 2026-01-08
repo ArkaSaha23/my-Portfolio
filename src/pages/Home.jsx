@@ -2,6 +2,8 @@ import Background from "../components/Background";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
+import Skills from "../components/Skills";
+import Footer from "../components/footer";
 import '../index.css';
 function Home() {
   return (
@@ -9,23 +11,13 @@ function Home() {
     <div className="min-h-screen max-w-full bg-background text-foreground overflow-x-hidden">
      {/* Background effects */}
      <Background/>
-
-     {/* navbar */}
      <Navbar/>
-
-     {/* Hero Section */}
      <HeroSection/>
-
-     {/* About Section */}
      <About/>
-     
-      {/* Skills Section */}
-
+      <Skills/>
       {/* Projects Section */}
-
       {/* Contact Section */} 
-
-      {/* Footer Section */}
+      <Footer/>
       </div>
     </>
   );
