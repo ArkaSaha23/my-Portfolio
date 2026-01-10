@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import '../index.css';
