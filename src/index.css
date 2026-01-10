@@ -75,14 +75,6 @@
 }
 
 @layer base{
-  /* :root {
-    --border:226 232 240;   
-    --background: 255 255 252;    
-    --foreground:235 239 246;  
-    --primary: 111 91 251;      
-    --secondary:111 91 251;    
-    --card:50 62 78;           
-  } */
   .dark{
     --border:39 39 42;
     --background: 9 9 11;
@@ -130,10 +122,6 @@
   @apply relative text-shadow-[0_0_10px_rgba(111,91,251,0.7)];
 }
 
-@utility card-hover{
-  @apply transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg;
-}
-
 @utility gradient-border{
   position:relative;
   border-radius:10%;
@@ -143,7 +131,7 @@
 } 
 
 @utility btn-primary{
-  @apply px-6 py-2 rounded-full bg-primary text-secondary font-semibold transition-all duration-300 ease-in-out hover:shadow-[0_0_10px_rgba(111,91,251,0.7)] hover:scale-130 active:scale-90;
+  @apply border-1 border-blue-600 rounded-md p-2 hover:bg-blue-400 hover:text-white transition-all duration-300
 }
 
 @utility star {
@@ -164,4 +152,7 @@
 
 @utility mobile-navbar-btn{
   @apply w-50 p-2 hover:border-1 rounded-full hover:text-shadow-lg hover:text-3xl hover:text-blue-600  transition-colors duration-300
+}
+@utility project-card{
+  @apply transition-all duration-300 ease-in-out hover:scale-[1.05] hover:shadow-lg  bg-primary/15 border-1 rounded-md p-3;
 }
