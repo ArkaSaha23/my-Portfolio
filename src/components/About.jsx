@@ -22,8 +22,10 @@ function About() {
         <p>
           Let's connect and create something amazing together.
         </p>
-          <a href="./https://docs.google.com/document/d/1yq7o-gUwwJ_B68jEFuejjmM69hqh3H0CNuVPVkhI_HY/edit?tab=t.0" download className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300 font-mono">
-            Download Resume
+          <a 
+          href="./https://docs.google.com/document/d/1yq7o-gUwwJ_B68jEFuejjmM69hqh3H0CNuVPVkhI_HY/edit?tab=t.0" 
+          className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300 font-mono">
+            View Resume
           </a>  
           <a href="#contact" className="mt-4 ml-4 inline-block bg-green-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300 font-mono">
           Contact Me
