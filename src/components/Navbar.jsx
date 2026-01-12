@@ -26,7 +26,7 @@ function Navbar() {
           </div>
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden focus:outline-none"
+            className="md:hidden focus:outline-none z-70"
             onClick={ () => setMenuOpen((prev) => !prev) }>
               {menuOpen ? <X size={24} />: <Menu size={24} />}
           </button>
